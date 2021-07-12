@@ -1,0 +1,230 @@
+ID,Location,Shell,CSL,CSW,TCL
+1,Gylly,Dogwhelk,30,32,73
+2,Gylly,Dogwhelk,31,36,84
+3,Gylly,Dogwhelk,43,40,81
+4,Gylly,Edible Periwinkle,36,32,66
+5,Gylly,Edible Periwinkle,48,44,97
+6,Gylly,Edible Periwinkle,42,51,109
+7,Gylly,Edible Periwinkle,51,41,100
+8,Gylly,Edible Periwinkle,29,30,85
+9,Gylly,Dogwhelk,43,35,72
+10,Gylly,Edible Periwinkle,51,40,101
+11,Gylly,Edible Periwinkle,42,29,73
+12,Gylly,Edible Periwinkle,52,43,101
+13,Gylly,Edible Periwinkle,41,36,77
+14,Gylly,Dogwhelk,58,43,117
+15,Gylly,Dogwhelk,44,41,87
+16,Gylly,Edible Periwinkle,44,45,89
+17,Gylly,Edible Periwinkle,29,22,53
+18,Gylly,Edible Periwinkle,55,41,84
+19,Gylly,Edible Periwinkle,44,33,84
+20,Gylly,Edible Periwinkle,42,35,92
+21,Gylly,Nettled Dogwhelk,24,26,63
+22,Gylly,Dogwhelk,35,32,72
+23,Gylly,Edible Periwinkle,40,34,80
+24,Gylly,Dogwhelk,50,40,82
+25,Gylly,Nettled Dogwhelk,39,42,71
+26,Gylly,Dogwhelk,42,38,76
+27,Gylly,Edible Periwinkle,43,38,86
+28,Gylly,Edible Periwinkle,39,38,73
+29,Gylly,Edible Periwinkle,50,42,86
+30,Gylly,Dogwhelk,49,35,72
+1,Porthleven,Common whelk,15,17,34
+2,Porthleven,Dogwhelk,23,26,64
+3,Porthleven,Dogwhelk,37,35,70
+4,Porthleven,Dogwhelk,40,34,72
+5,Porthleven,Edible Periwinkle,56,58,101
+6,Porthleven,Dogwhelk,28,19,46
+7,Porthleven,Common Topshell,NA,NA,NA
+8,Porthleven,Dogwhelk,34,32,65
+9,Porthleven,Dogwhelk,40,33,70
+10,Porthleven,Dogwhelk,41,40,89
+11,Porthleven,Dogwhelk,34,27,65
+12,Porthleven,Dogwhelk,37,35,
+13,Porthleven,Dogwhelk,30,26,67
+14,Porthleven,Dogwhelk,38,27,71
+15,Porthleven,Dogwhelk,40,33,72
+16,Porthleven,Dogwhelk,30,23,61
+17,Porthleven,Oysterdrill,31,21,41
+18,Porthleven,Dogwhelk,30,26,53
+19,Porthleven,Edible Periwinkle,54,56,103
+20,Porthleven,Dogwhelk,48,44,92
+21,Porthleven,Dogwhelk,46,35,72
+22,Porthleven,Dogwhelk,29,26,62
+23,Porthleven,Dogwhelk,32,26,55
+24,Porthleven,Dogwhelk,31,41,82
+25,Porthleven,Dogwhelk,38,22,67
+26,Porthleven,Dogwhelk,38,37,73
+27,Porthleven,Dogwhelk,50,37,69
+28,Porthleven,Dogwhelk,47,41,93
+29,Porthleven,Edible Periwinkle,50,43,NA
+30,Porthleven,Dogwhelk,NA,37,88
+1,Roscoff,Nettled Dogwhelk,38,26,70
+2,Roscoff,Edible Periwinkle,65,54,101
+3,Roscoff,Dogwhelk,50,40,91
+4,Roscoff,Edible Periwinkle,65,51,107
+5,Roscoff,Edible Periwinkle,NA,41,NA
+6,Roscoff,Dogwhelk,43,35,NA
+7,Roscoff,Dogwhelk,43,30,81
+8,Roscoff,Dogwhelk,55,42,87
+9,Roscoff,Dogwhelk,46,33,75
+10,Roscoff,Dogwhelk,43,33,40
+11,Roscoff,Dogwhelk,46,38,85
+12,Roscoff,Dogwhelk,33,35,66
+13,Roscoff,Dogwhelk,32,25,60
+14,Roscoff,Dogwhelk,43,36,71
+15,Roscoff,Dogwhelk,39,33,71
+16,Roscoff,Dogwhelk,39,29,63
+17,Roscoff,Dogwhelk,33,32,69
+18,Roscoff,Dogwhelk,37,36,71
+19,Roscoff,Edible Periwinkle,61,52,128
+20,Roscoff,Dogwhelk,48,42,88
+1,Tremazon,Dogwhelk,44,36,77
+2,Tremazon,Dogwhelk,43,38,70
+3,Tremazon,Dogwhelk,NA,31,NA
+4,Tremazon,Dogwhelk,40,33,70
+5,Tremazon,Dogwhelk,45,39,81
+6,Tremazon,Dogwhelk,41,32,70
+7,Tremazon,Dogwhelk,41,36,67
+8,Tremazon,Dogwhelk,45,36,67
+9,Tremazon,Dogwhelk,40,35,61
+10,Tremazon,Dogwhelk,48,41,74
+11,Tremazon,Dogwhelk,41,34,62
+12,Tremazon,Dogwhelk,39,35,72
+13,Tremazon,Dogwhelk,33,24,55
+14,Tremazon,Dogwhelk,38,31,59
+15,Tremazon,Dogwhelk,43,35,73
+16,Tremazon,Dogwhelk,42,35,68
+17,Tremazon,Dogwhelk,40,35,67
+18,Tremazon,Dogwhelk,46,38,74
+19,Tremazon,Dogwhelk,37,30,62
+20,Tremazon,Dogwhelk,42,39,70
+1,Caramet,Dogwhelk,53,47,83
+2,Caramet,Dogwhelk,60,49,NA
+3,Caramet,Dogwhelk,46,41,93
+4,Caramet,Dogwhelk,53,44,91
+5,Caramet,Dogwhelk,46,32,74
+6,Caramet,Dogwhelk,52,38,80
+7,Caramet,Dogwhelk,51,39,81
+8,Caramet,Dogwhelk,NA,45,NA
+9,Caramet,Dogwhelk,44,35,82
+10,Caramet,Nettled Dogwhelk,38,34,65
+11,Caramet,Nettled Dogwhelk,35,27,62
+12,Caramet,Dogwhelk,54,42,89
+13,Caramet,Dogwhelk,49,41,74
+14,Caramet,Dogwhelk,40,35,65
+15,Caramet,Nettled Dogwhelk,NA,NA,NA
+16,Caramet,Nettled Dogwhelk,30,24,43
+17,Caramet,Dogwhelk,34,34,65
+18,Caramet,Dogwhelk,44,35,77
+19,Caramet,Dogwhelk,50,41,82
+20,Caramet,Dogwhelk,44,40,79
+1,Primelin,Purple top shell,37,26,54
+2,Primelin,Nettled Dogwhelk,31,28,54
+3,Primelin,Edible Periwinkle,35,28,66
+4,Primelin,Edible Periwinkle,50,42,89
+5,Primelin,Purple top shell,NA,26,NA
+6,Primelin,Edible Periwinkle,48,41,85
+7,Primelin,Dogwhelk,NA,NA,NA
+8,Primelin,Dogwhelk,20,22,38
+9,Primelin,Common whelk,31,24,50
+10,Primelin,Nettled Dogwhelk,33,29,56
+11,Primelin,Purple top shell,29,27,47
+12,Primelin,Edible Periwinkle,50,44,80
+13,Primelin,Dogwhelk,30,27,61
+14,Primelin,Dogwhelk,33,26,59
+15,Primelin,Nettled Dogwhelk,30,22,53
+16,Primelin,Edible Periwinkle,36,33,58
+17,Primelin,Nettled Dogwhelk,33,26,59
+18,Primelin,Edible Periwinkle,41,34,71
+19,Primelin,Grey top shell,21,17,38
+20,Primelin,Dogwhelk,35,27,64
+1,St Guenole,Common Topshell,50,43,89
+2,St Guenole,Edible Periwinkle,38,33,63
+3,St Guenole,Common Topshell,40,31,75
+4,St Guenole,Edible Periwinkle,34,28,61
+5,St Guenole,Common whelk,37,29,64
+6,St Guenole,Edible Periwinkle,42,32,65
+7,St Guenole,Common Topshell,45,37,67
+8,St Guenole,Edible Periwinkle,44,33,66
+9,St Guenole,Edible Periwinkle,44,47,76
+10,St Guenole,Edible Periwinkle,45,33,79
+11,St Guenole,Edible Periwinkle,38,35,71
+12,St Guenole,Common Topshell,36,35,61
+13,St Guenole,Edible Periwinkle,40,36,67
+14,St Guenole,Edible Periwinkle,44,41,71
+15,St Guenole,Edible Periwinkle,47,41,74
+16,St Guenole,Common Topshell,44,37,71
+17,St Guenole,Edible Periwinkle,43,36,66
+18,St Guenole,Edible Periwinkle,36,31,67
+19,St Guenole,Edible Periwinkle,46,38,71
+20,St Guenole,Edible Periwinkle,NA,NA,NA
+1,Pointe de kerjean,Purple top shell,23,24,38
+2,Pointe de kerjean,Edible Periwinkle,39,26,43
+3,Pointe de kerjean,Edible Periwinkle,35,29,66
+4,Pointe de kerjean,Purple top shell,23,21,43
+5,Pointe de kerjean,Nettled Dogwhelk,25,25,48
+6,Pointe de kerjean,Nettled Dogwhelk,35,29,76
+7,Pointe de kerjean,Dogwhelk,52,40,81
+8,Pointe de kerjean,Dogwhelk,41,35,NA
+9,Pointe de kerjean,Dogwhelk,43,34,73
+10,Pointe de kerjean,Dogwhelk,41,35,72
+11,Pointe de kerjean,Nettled Dogwhelk,37,30,60
+12,Pointe de kerjean,Dogwhelk,38,32,NA
+13,Pointe de kerjean,Nettled Dogwhelk,36,29,60
+14,Pointe de kerjean,Dogwhelk,47,40,76
+15,Pointe de kerjean,Common whelk,33,29,55
+16,Pointe de kerjean,Dogwhelk,31,30,NA
+17,Pointe de kerjean,Dogwhelk,35,32,61
+18,Pointe de kerjean,Dogwhelk,37,29,53
+19,Pointe de kerjean,Dogwhelk,35,29,52
+20,Pointe de kerjean,Dogwhelk,33,27,45
+1,Keroch,Nettled Dogwhelk,20,15,34
+2,Keroch,Nettled Dogwhelk,27,23,37
+3,Keroch,Common Topshell,46,40,80
+4,Keroch,Dogwhelk,29,26,NA
+5,Keroch,Dogwhelk,31,25,50
+6,Keroch,Nettled Dogwhelk,36,31,60
+7,Keroch,Dogwhelk,26,22,44
+8,Keroch,Flat Topshell,27,25,46
+9,Keroch,Edible Periwinkle,45,39,82
+10,Keroch,Common Topshell,41,32,66
+11,Keroch,Edible Periwinkle,31,24,50
+12,Keroch,Purple top shell,24,24,40
+13,Keroch,Dogwhelk,43,31,74
+14,Keroch,Common Topshell,32,32,56
+15,Keroch,Dogwhelk,34,27,53
+16,Keroch,Nettled Dogwhelk,31,27,46
+17,Keroch,Edible Periwinkle,39,28,60
+18,Keroch,Common whelk,37,26,54
+19,Keroch,Common Topshell,34,24,59
+20,Keroch,Dogwhelk,33,30,52
+1,Porth Meor,Edible Periwinkle,56,52,111
+2,Porth Meor,Edible Periwinkle,50,41,82
+3,Porth Meor,Edible Periwinkle,51,43,76
+4,Porth Meor,Edible Periwinkle,60,45,85
+5,Porth Meor,Edible Periwinkle,60,52,99
+6,Porth Meor,Edible Periwinkle,64,53,NA
+7,Porth Meor,Edible Periwinkle,68,51,96
+8,Porth Meor,Edible Periwinkle,57,47,97
+9,Porth Meor,Edible Periwinkle,54,50,79
+10,Porth Meor,Edible Periwinkle,45,41,NA
+11,Porth Meor,Edible Periwinkle,62,51,99
+12,Porth Meor,Edible Periwinkle,46,40,73
+13,Porth Meor,Edible Periwinkle,47,41,67
+14,Porth Meor,Edible Periwinkle,66,53,105
+15,Porth Meor,Edible Periwinkle,NA,43,NA
+16,Porth Meor,Edible Periwinkle,64,52,111
+17,Porth Meor,Edible Periwinkle,47,40,71
+18,Porth Meor,Edible Periwinkle,51,41,72
+19,Porth Meor,Edible Periwinkle,48,38,74
+20,Porth Meor,Edible Periwinkle,47,42,89
+21,Porth Meor,Edible Periwinkle,38,33,63
+22,Porth Meor,Edible Periwinkle,39,34,65
+23,Porth Meor,Edible Periwinkle,47,41,89
+24,Porth Meor,Edible Periwinkle,58,42,71
+25,Porth Meor,Edible Periwinkle,52,47,66
+26,Porth Meor,Edible Periwinkle,50,42,70
+27,Porth Meor,Dogwhelk,53,49,76
+28,Porth Meor,Dogwhelk,42,38,72
+29,Porth Meor,Dogwhelk,39,31,56
