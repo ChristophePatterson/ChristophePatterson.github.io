@@ -1,12 +1,5 @@
 ---
 title: "Introduction to R"
-knit: (function(input_file, encoding) {
-  out_dir <- 'docs';
-  rmarkdown::render(input_file,
- encoding=encoding,
- output_file=file.path(dirname(input_file), out_dir, 'Introduction_to_R.html'))})
-author: "Christophe Patterson"
-date: "07/07/2021"
 ---
 
 ```{r setup, include=FALSE}
