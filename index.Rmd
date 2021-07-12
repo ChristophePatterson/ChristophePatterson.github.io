@@ -6,3 +6,23 @@ knit: (function(input_file, encoding) {
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
+```{r setup, include=FALSE}
+library(knitr)
+```
+
+```{r cars, out.width="20%", fig.align='right', echo=FALSE}
+img1_path <- "Pictures/Profile_head_small.png"
+include_graphics(img1_path)
+```
+
+## Hello!
+
+I'm Christophe, a PhD student at Durham University. For my PhD I work on [Rubyspot damselflies](https://www.inaturalist.org/projects/smoky-rubyspots) (Hetaerina) and how behavioural interference between species could impact their ability to range shift. I use a combination of landscape genomics and citizen science data. I'm also a director for the [rock pool project](https://www.therockpoolproject.co.uk/). I'm hoping to follow this into a career in academia but keeping an open mind along the way.
+
+Previously I was at Exeter (Penryn) for both my BSc in Evolutionary Biology and my two-year Master by Research. At Exeter I was investigating the range expansion of the [St Piran’s hermit crab], Clibanarius erythropus, to the southwest UK using, [population size and morphology surveys](https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1), population genetics and larval dispersal models. I grew up just outside of Leeds on the boundary of the Yorkshire dales.
+
+You've found my github website where I aim to share interesting and fun things I've made.
+
+Outside of lockdown, I head out climbing, orienteering, sea swimming, and cycling.
+
+Feel free to reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html)! I'm also on Twitter where you can find me usually tweeting around life as a PhD student ([Christophe_Patt ](https://twitter.com/Christophe_Patt)) and the rock pool project, with some occasional grumblings around cycling infrastructure.
