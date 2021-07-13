@@ -6,6 +6,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "R resources"
-      menu:
-      - text: "Introduction to R"
-      href: Introduction_to_R.html
+      menu: 
+      - text: "Introduction"
+      - text: "Getting started with R"
+        href: Introduction_to_R.html
