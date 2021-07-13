@@ -132,7 +132,7 @@ Having your own resource bank of these help sheets will be a massive help a year
 
 ### 2) Write linear code
 
-R works by being fed instructions on after another. This means the order in which those instructions are given matter. For example, you need to divide your measurements of ant antenna by 10 to convert them from mm to cm. So you write the following lines of code.
+R works by being fed instructions one after another. This means the order in which those instructions are given matter. For example, you need to divide your measurements of ant antenna by 10 to convert them from mm to cm. So you write the following lines of code.
 ```{r}
 #Creating an object called ant length
 ant.length <- c(4 ,6 ,4 ,5 ,7)
@@ -147,7 +147,7 @@ But afterwards you discover that your measuring callipers weren’t zeroed corre
 ant.length <- ant.length - 2
 ant.length
 ```
-As you can see, this hasn’t given taken 2 mm away from the original data, its taken 2 cm off the the ant.length object as it was stored within the environment. We need to write the code as follows.
+As you can see, this hasn’t given taken 2 mm away from the original data, its taken 2 cm off the ant.length object as it was stored within the environment. We need to write the code as follows.
 ```{r}
 #Creating an object called ant length
 ant.length <- c(4 ,6 ,4 ,5 ,7)

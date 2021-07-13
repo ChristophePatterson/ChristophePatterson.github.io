@@ -1,9 +1,11 @@
 name: "Christophe Patterson"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Christophe Patterson"
   left:
     - text: "Home"
       href: index.html
-    - text: "Introduction to R"
+    - text: "R resources"
+      menu:
+      - text: "Introduction to R"
       href: Introduction_to_R.html
