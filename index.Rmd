@@ -1,16 +1,11 @@
 ---
 title: "Home"
-knit: (function(input_file, encoding) {
-  out_dir <- 'docs';
-  rmarkdown::render(input_file,
- encoding=encoding,
- output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 ```{r setup, include=FALSE}
 library(knitr)
 ```
 
-```{r cars, out.width="20%", fig.align='right', echo=FALSE}
+```{r Profile, out.width="20%", fig.align='right', echo=FALSE}
 img1_path <- "Pictures/Profile_head_small.png"
 include_graphics(img1_path)
 ```
@@ -25,4 +20,19 @@ You've found my github website where I aim to share interesting and fun things I
 
 Outside of lockdown, I head out climbing, orienteering, sea swimming, and cycling.
 
-Feel free to reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html)! I'm also on Twitter where you can find me usually tweeting around life as a PhD student ([Christophe_Patt ](https://twitter.com/Christophe_Patt)) and the rock pool project, with some occasional grumblings around cycling infrastructure.
+Feel free to reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html)! I'm also on Twitter where you can find me usually tweeting about life as a PhD student ([Christophe_Patt ](https://twitter.com/Christophe_Patt)) and the rock pool project, with some occasional grumblings around cycling infrastructure.
+
+## Papers
+
+**Patterson C**, Slater M, Early R, Laing C. [The status of Clibanarius erythropus after a recent range expansion to Great Britain, with the highest latitude recording of a gravid individual.](https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1) *Marine Biology Records.* 2020
+
+Sanders D, Frago E, Kehoe R, **Patterson C**, and Gaston KJ. . [A meta-analysis of biological impacts of artificial light at night.](https://www.nature.com/articles/s41559-020-01322-x) *Nature Ecology & Evolution* 2020
+
+## Media
+
+Milkshake! Monkey’s amazing adventures [S2:E2 Rock-Pooling](https://www.my5.tv/milkshake-monkey-s-amazing-adventures/season-2/rock-pooling) Channel 5 in August 2021.
+
+```{r Footer, out.width="100%", fig.align='left', echo=FALSE}
+img1_path <- "Pictures/Footer.jpg"
+include_graphics(img1_path)
+```

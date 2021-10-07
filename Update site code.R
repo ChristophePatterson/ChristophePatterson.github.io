@@ -8,3 +8,4 @@ rmarkdown::render_site()
 git status
 git add .
 git commit -m "NAME OF COMMIT"
+git push -u origin <BRANCH-NAME>
