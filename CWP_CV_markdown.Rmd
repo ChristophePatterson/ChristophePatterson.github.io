@@ -1,0 +1,174 @@
+---
+title: "Christophe Patterson CV"
+author: ""
+date: "16/01/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Uni email:** christophe.patterson@durham.ac.uk
+
+**Personal email** : christophepatterson@outlook.com
+
+---
+
+### Personal Profile
+
+A PhD student with a passion for exploration and education. Has a keen interest in studying the impacts of humans&#39; actions, including climate change, on biodiversity and species&#39; geographic ranges. Interested in furthering their experience in next generation sequencing, fieldwork, scientific literacy, and communication. Has developed the key skills needed for teamwork and effective organisation across a diverse range of jobs and voluntary work.
+
+---
+
+### Education
+
+**Durham University**: 2020 to Present
+
+|       **PhD - Durham Doctoral Studentship**
+
+Doctoral student within the Bioscience department studying how interactions between species impact range expansion. Primarily working on landscape genomics of Rubyspot damselflies (_Hetaerina_). Wet lab experience organising and processing samples (>400) for DNA extraction. Six weeks training at the NERC Environmental Omics Facility learning to carry out ddRAD sequencing. Tropical fieldwork in Mexico, surveying, collecting, photographing, and running behavioural experiments on damselflies along rivers. Member of the Graduate Liaison Committee listening to and providing feedback on ideas to improve the experience of PhD students at Durham.
+
+**University of Exeter (Penryn Campus)**: 2018 to 2020
+
+|       **Master by Research in Biological sciences**
+
+Research degree investigating the range expansion of a species of hermit crab to the UK. Conducting data collection in the UK and France followed by DNA extraction, sequencing, and analysis of population genetics and phylogeography. Additional work conducting larval dispersal models. Work also includes demonstrating and marking on undergraduate and taught masters modules, including Analysis of Biological Data, Introduction to Invertebrates, and Key Skills in Biology. This all balanced with working a part time retail job as well as a Meta-analysis in artificial light at night. Member of the organising committee for **BES Macroecology Special Interest Group** 2019 conference helping with the planning, organising, and running of a 3-day scientific conference. See publications section below.
+
+|       **Bachelor of Science with Honours in Evolutionary Biology: First Class** 2015 to 2018
+
+Selected modules results:
+| **Third year** - Research project, Borneo Field Course, Science in Society (all 1st), Marine spatial ecology (2:1)
+| *Awarded the Sir Geoffrey Holland Prize for academic excellence within a field related to Cornwall*
+| **Second year** - Iceland field Course, Analysis of Biological Data, Evolutionary Conservation Genetics, and Mathematics of the Environment II (all 1st), Exploitation of the Sea (2.1)
+| **First year** - Genetics, and Physiology (1st). Conservation and Ecology, Evolutionary and Behavioural Ecology, Field and lab techniques, and Key Skills in biology (all 2.1)
+
+<center> 
+_Terrifically good writing, a real pleasure to read._ - Professor Michael Cant
+
+_Excellent personal writing style that draws the reader in, beautifully written._ – Dr R. Early & Dr K. Moyes 
+</center>
+
+|  
+|  
+**University of California, Berkeley:** July to August 2017
+
+Awarded a bursary to fund six weeks study abroad in Berkeley, California. Living and working with students from across the globe. Studied: Selected Topics in Astronomy (A-), and Introduction to Oceanography (B).
+
+**Prince Henry's Grammar School & Sixth Form:** 2007 to 2015
+
+A Levels in Biology (A), Art (A), and Physics (B), with AS Level Mathematics (C)
+
+12 GCSEs; 4 A\*s in Biology, Physics, Chemistry and Art, A in Mathematics, 5 Bs including Further Mathematics and English Language. 2 Cs and 1 D.
+
+---
+
+### Previous/Current Employment and Voluntary Work
+
+**Director, The Rockpool Project:** July 2018 to present
+
+Director of the not-for-profit for a community outreach project aiming to educate, engage and conserve rock pool wildlife in the UK. Responsible for giving half an hour educational talk to people of multiple ages and an hour and a half personal guides for groups, both involving answering questions about a wide range of littoral flora. Requiring organisation and speed to set up and back down equipment around the tide. Co-host of the six week course &quot;Introduction to rock pooling&quot; an online lecture series. Additional full time six-week paid internship (June – July 2020) building, developing, and running a new citizen science biodiversity survey. Staring in the eight-minute educational children&#39;s programme Milkshake! Monkey&#39;s amazing adventures [S2:E2 Rock-Pooling](https://www.my5.tv/milkshake-monkey-s-amazing-adventures/season-2/rock-pooling) which aired on Channel 5 in August 2021.
+
+<center> _We had a wonderful private family rock pool adventure with rock pool expert Christophe. We can&#39;t thank you enough for such an enjoyable and informative hour and a half. He was passionate about the sea and all its creatures and is a wealth of knowledge. Our kids absolutely love[ed] it and we left knowing a lot more than we ever did before about the different types of creatures on our coastline. Would highly recommend_ </center>
+
+|  
+|  
+**Undergraduate Summer School Mentor, British Ecological Society:** July 2021
+
+Taking a leading roles as mentor for the a week long summer school for undgraduate student studying Ecology related degrees. Supporting and guiding a personal mentor group through the week and providing wider advise to the whole cohort. Planned and presented an hour long talk and worksheet to provide [an introduction to R](https://christophepatterson.github.io/Introduction_to_R.html).
+
+**Artificial light at night - Meta-analysis, University of Exeter:** June 2018 to December 2018
+
+Complete survey of all scientific literature on the topic of ALAN and its impact of ecosystem community and composition, species&#39; abundance and health, and individual animal's physiology and behaviour. Work involving data extraction, summarising literature for others, and handling large volumes of data in excel and R. See publication below.
+
+**FXU Expedition Society:** November 2015 to June 2018
+
+Organising outdoor events requiring multiple steps, including risk assessments, budgeting, itineraries, and leadership skills, such as delegating and working in a team with other committee members. High level of responsibility in the field due to highly changeable environments and many potential risks. Experience leading groups of up to 49 people across Dartmoor, Bodmin moor, the National Three Peaks Challenge (completed in 27.5h) the SW coastal path, and many other landscapes. Promotional work, including the use of social media, direct contact with members and fundraising for local and national charities.
+
+- **President** : April 2016 to April 2017
+
+- **Multi-Day Excursion Officer:** April 2017 to April 2018
+
+- **Walks officer** : November 2015 to April 2016
+
+**Nominated for Non-competitive sport society of the year 2016/17**
+
+<center> &quot;[The Expedition committee] has proved itself to be, without parallel for me, efficient, enthusiastic and hugely collaborative. Here is a team of students who communicate well with each other and with FXU, who share the load fairly between themselves and run events with a keen eye on budget and precise delivery...Statistics are impressive too: whilst their membership numbers have remained largely constant the level of engagement has increased by &quot; </center>
+
+|  
+|  
+**Walks officer for &#39;Choose your day&#39; wellbeing project, FXU February 2019 to April 2019**
+
+Head hunted and offered a position by the FXU student union to help run a mental wellbeing project, allowing students to experience range of physical activities to manage their mental health. Funded by BUCS and Sport England.
+
+**Casual retail assistant, The Shop, Penryn campus:** Sept 2018 to present
+
+Working a range of shifts from opening to closing. Managing to work effectively under rapidly varying levels of customers. Particularly during lunch and lecture changeovers.
+
+---
+
+### Research and Field Work Experience
+
+**Iceland and Borneo Field Courses:** May 2017 and Jan 2018
+
+- Iceland: Investigating the effect of temperature on ecosystem structure within the same spatial location. Hiking up to and sampling remote Icelandic geothermal streams, DNA extraction and analysis in high intensity lab work.
+- Borneo: Surveying animal behaviour and biodiversity, in one of the most remote locations on. Studying and understand conservation in order to make practical decisions that benefit local people and wildlife.
+
+**Laboratory assistant, Healthcare Associated Infections Research Group, University of Leeds:**  Nov 2014
+
+Experience using a range of microbiology techniques and equipment including; anaerobic workstations, using and making agar plates, and using an invitro gut model. Recording numerical data and participating in the working environment of a functioning Microbiology laboratory.
+
+---
+
+### Publications
+
+**Patterson C,** Early R, Lowe C. The hermit crab _Clibanarius erythropus_ shows little phylogeographic structure across the European seascape _Heredity_ [In revision]
+
+**Patterson C** , Laing C, Early R. The range expansion of _Clibanarius erythropus_ to the UK suggests that other range-shifting intertidal species may not follow _Marine Biology_ 2022
+
+**Patterson C** , Slater M, Early R, Laing C. The status of _Clibanarius erythropus_ after a recent range expansion to Great Britain, with the highest latitude recording of a gravid individual. _Marine Biology Records._ 2020
+
+Sanders D, Frago E, Kehoe R, **Patterson C**, and Gaston KJ. . A meta-analysis of biological impacts of artificial light at night. _Nature Ecology &amp; Evolution_ 2021
+
+---
+
+### Skills and Other Qualifications
+
+**Outdoor First Aid - Basic –Cornwall First Aid:** Certificate valid until July 2022
+
+One day course covering the basic essentials required to provide emergency care to a casualty. Received training in a range of first aid skills including: The ability to act safely and effectively when an accident or emergency occurs, the treatment and priorities of care for an unconscious casualty, the recognition of cardiac arrest and delivery of Cardiopulmonary Resuscitation (CPR), and to recognise and safely treat a casualty who is choking and/or bleeding.
+
+**IT-skills**
+
+Good experience with R studio, Microsoft Word, Excel, Adobe Acrobat DC, and PowerPoint. Some experience with Matlab, GIS, Adobe After-effects, Flash, Paint.net and Audacity.
+
+**Navigation, Outdoor and Mountain Experience Airienteers Jan 1996 to present**
+
+Organising and competing in numerous orienteering events in urban and rural areas. Complete confidence in map navigation and compass use. Knowledge and experience of multiple environmental hazards and the appropriate actions to minimise risk. Long-time and tested experience kayaking, canoeing, climbing, skiing, fellrunning, surfing and sailing.
+
+---
+
+### Other Information
+
+Outside of university and work I enjoy a variety of extreme sports, such as hiking, climbing (I recently summited the 11,000ft alpine peak, the Aiguille de Dibona), skiing, white water canoeing, orienteering (a member of Airienteers), surfing, and sailing as well as more traditional sports such as hockey and football. I have also taught myself the guitar for over 5 years and have performed at multiple open mic nights. My passions include live music events and learning more about the world around me.
+
+---
+
+### References
+
+**Dr Regan Early**
+
+Senior Lecturer in Conservation Biology,
+Daphne du Maurier Building, University of Exeter,
+Penryn, Cornwall
+TR10 9FE
+Email: [r.early@exeter.ac.uk](mailto:r.early@exeter.ac.uk)
+Tel: +44 (0)1326 259289
+
+**Dr Jonathan Drury**
+Associate Professor in the Department of Biosciences,
+Biosciences, Durham University, Stockton Rd,
+Durham
+DH1 3LE
+Email: [jonathan.p.drury@durham.ac.uk](mailto:jonathan.p.drury@durham.ac.uk)
+Tel +44 (0) 191 33 41348

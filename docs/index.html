@@ -13,22 +13,35 @@
 
 <title>Home</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,32 +54,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -76,10 +64,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -96,40 +80,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -157,7 +114,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -169,7 +126,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -180,10 +137,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -195,7 +165,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -274,6 +243,9 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
+<li>
+  <a href="CWP_CV_markdown.html">CV</a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     R resources
@@ -295,7 +267,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -307,15 +279,17 @@ $(document).ready(function () {
 <p><img src="Pictures/Profile_head_small.png" width="20%" style="display: block; margin: auto 0 auto auto;" /></p>
 <div id="hello" class="section level2">
 <h2>Hello!</h2>
-<p>I’m Christophe, a PhD student at Durham University. For my PhD I work on <a href="https://www.inaturalist.org/projects/smoky-rubyspots">Rubyspot damselflies</a> (Hetaerina) and how behavioural interference between species could impact their ability to range shift. I use a combination of landscape genomics and citizen science data. I’m also a director for the <a href="https://www.therockpoolproject.co.uk/">rock pool project</a>. I’m hoping to follow this into a career in academia but keeping an open mind along the way.</p>
-<p>Previously I was at Exeter (Penryn) for both my BSc in Evolutionary Biology and my two-year Master by Research. At Exeter I was investigating the range expansion of the <a href="https://www.therockpoolproject.co.uk/st-pirans-hermit-crab/">St Piran’s hermit crab</a>, Clibanarius erythropus, to the southwest UK using, <a href="https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1">population size and morphology surveys</a>, population genetics and larval dispersal models. I grew up just outside of Leeds on the boundary of the Yorkshire dales.</p>
-<p>You’ve found my github website where I aim to share interesting and fun things I’ve made.</p>
+<p>Hi I’m Christophe, a PhD student at Durham University. You’ve found my github website where I aim to share interesting and fun things I’ve made.</p>
+<p>Does interspecific behavioural interference limit the ability of species to range shifts? My work focuses of <a href="https://www.inaturalist.org/projects/smoky-rubyspots">Rubyspot damselflies</a>, <em>Hetaerina</em>, where species engage and experience varying levels of aggressive and reproductive interference. Do the ranges of <em>Hetaerina</em> species that experience lower levels of interspecific interference expand more rapidly?</p>
+<p>I’m also a director for the <a href="https://www.therockpoolproject.co.uk/">rock pool project</a> a not-for-profit community outreach project aiming to educate, engage and conserve rock pool wildlife in the UK.</p>
+<p>Previously I was at Exeter (Penryn) for both my BSc in Evolutionary Biology and my two-year Master by Research. At Exeter I was investigating the range expansion of the <a href="https://www.therockpoolproject.co.uk/st-pirans-hermit-crab/">St Piran’s hermit crab</a>, <em>Clibanarius erythropus</em>, to the southwest UK using, <a href="https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1">population size and morphology surveys</a>, population genetics and larval dispersal models. I grew up just outside of Leeds on the boundary of the Yorkshire dales.</p>
 <p>Outside of lockdown, I head out climbing, orienteering, sea swimming, and cycling.</p>
 <p>Feel free to reach out by <a href="http://www.conservationecology.org/christophe-patterson.html">email anytime</a>! I’m also on Twitter where you can find me usually tweeting about life as a PhD student (<a href="https://twitter.com/Christophe_Patt">Christophe_Patt</a>) and the rock pool project, with some occasional grumblings around cycling infrastructure.</p>
 </div>
 <div id="papers" class="section level2">
 <h2>Papers</h2>
-<p><strong>Patterson C</strong>, Slater M, Early R, Laing C. <a href="https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1">The status of Clibanarius erythropus after a recent range expansion to Great Britain, with the highest latitude recording of a gravid individual.</a> <em>Marine Biology Records.</em> 2020</p>
+<p><strong>Patterson C</strong>, Laing C, Early R. The range expansion of <em>Clibanarius erythropus</em> to the UK suggests that other range-shifting intertidal species may not follow <em>Marine Biology</em> 2022</p>
+<p><strong>Patterson C</strong>, Slater M, Early R, Laing C. <a href="https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1">The status of <em>Clibanarius erythropus</em> after a recent range expansion to Great Britain, with the highest latitude recording of a gravid individual.</a> <em>Marine Biology Records.</em> 2020</p>
 <p>Sanders D, Frago E, Kehoe R, <strong>Patterson C</strong>, and Gaston KJ. . <a href="https://www.nature.com/articles/s41559-020-01322-x">A meta-analysis of biological impacts of artificial light at night.</a> <em>Nature Ecology &amp; Evolution</em> 2020</p>
 </div>
 <div id="media" class="section level2">
@@ -333,7 +307,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -351,7 +325,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

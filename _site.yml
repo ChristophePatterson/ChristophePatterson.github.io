@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "CV"
+      href: CWP_CV_markdown.html
     - text: "R resources"
       menu: 
       - text: "Introduction"
