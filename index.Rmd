@@ -20,21 +20,27 @@ I'm also a director for the [rock pool project](https://www.therockpoolproject.c
 
 Previously I was at Exeter (Penryn) for both my BSc in Evolutionary Biology and my two-year Master by Research. At Exeter I was investigating the range expansion of the [St Piran’s hermit crab](https://www.therockpoolproject.co.uk/st-pirans-hermit-crab/), *Clibanarius erythropus*, to the southwest UK using, [population size and morphology surveys](https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1), population genetics and larval dispersal models. I grew up just outside of Leeds on the boundary of the Yorkshire dales.
 
-Outside of lockdown, I head out climbing, orienteering, sea swimming, and cycling.
+I head out climbing, orienteering, sea swimming, and cycling.
 
 Feel free to reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html)! I'm also on Twitter where you can find me usually tweeting about life as a PhD student ([Christophe_Patt ](https://twitter.com/Christophe_Patt)) and the rock pool project, with some occasional grumblings around cycling infrastructure.
 
 ## Papers
 
-**Patterson C**, Laing C, Early R. The range expansion of *Clibanarius erythropus* to the UK suggests that other range-shifting intertidal species may not follow *Marine Biology* 2022
+**Patterson C**, Laing C, Early R. The range expansion of [*Clibanarius erythropus* to the UK suggests that other range-shifting intertidal species may not follow](http://dx.doi.org/10.1007/s00227-021-04008-5) *Marine Biology* 2022
 
 **Patterson C**, Slater M, Early R, Laing C. [The status of *Clibanarius erythropus* after a recent range expansion to Great Britain, with the highest latitude recording of a gravid individual.](https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1) *Marine Biology Records.* 2020
 
-Sanders D, Frago E, Kehoe R, **Patterson C**, and Gaston KJ. . [A meta-analysis of biological impacts of artificial light at night.](https://www.nature.com/articles/s41559-020-01322-x) *Nature Ecology & Evolution* 2020
+Sanders D, Frago E, Kehoe R, **Patterson C**, and Gaston KJ. . [A meta-analysis of biological impacts of artificial light at night.](https://www.nature.com/articles/s41559-020-01322-x) *Nature Ecology & Evolution* 2021
 
 ## Media
 
 Milkshake! Monkey’s amazing adventures [S2:E2 Rock-Pooling](https://www.my5.tv/milkshake-monkey-s-amazing-adventures/season-2/rock-pooling) Channel 5 in August 2021.
+
+[Cornwall's rockpool species 'threatened by climate change'](https://www.itv.com/news/westcountry/2022-01-20/cornwalls-rockpool-species-threatened-by-climate-change) **ITV news** 20/01/2022
+
+[Cornwall's rockpool species 'threatened by climate change'](https://www.bbc.co.uk/news/uk-england-cornwall-60055099) **BBC Spotlight** 20/01/22
+
+[The week in wildlife](https://www.theguardian.com/environment/gallery/2022/jan/21/the-week-in-wildlife-in-pictures#img-21) **The Guardian** 21/01/22
 
 ```{r Footer, out.width="100%", fig.align='left', echo=FALSE}
 img1_path <- "Pictures/Footer.jpg"
