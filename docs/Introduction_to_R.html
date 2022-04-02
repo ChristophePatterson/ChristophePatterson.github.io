@@ -13,22 +13,36 @@
 
 <title>Introduction to R</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,32 +55,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -76,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -96,40 +82,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -157,7 +119,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -169,7 +131,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -180,10 +142,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -195,7 +170,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -262,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -274,8 +248,11 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
+<li>
+  <a href="CWP_CV_markdown.html">CV</a>
+</li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     R resources
      
     <span class="caret"></span>
@@ -295,7 +272,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -307,21 +284,66 @@ $(document).ready(function () {
 <p><img src="Pictures/Profile_head_small.png" width="20%" style="display: block; margin: auto auto auto 0;" /></p>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>For the last three years, I have been teaching undergraduates and masters students to use R. Predominantly as part of a second year statistics module for Ecology, Evolution, and Conservation courses at a UK university. This statistics course naturally blends into other modules and will ultimately form the basis of any third year dissertation the students undertake. Much of this teaching is extremely fulfilling, guiding students through difficult problems, building their confidence, and, yes, pointing out a few unclosed brackets. But there often remains a lingering hatred for R among undergraduates, and come to think of it several PhD students I know. Students who have never quite gotten over being told they shouldn’t use excel any more. This introduction is for those students. It is my attempt to start the slate over again and introduce R fresh, and also start any new students looking at getting into R the best possible path forward.</p>
-<p>The main sections of this document cover what R is, why we use R, the basics of using R, and finally the best practise for learning R. There are examples of code within this introduction, but no coding is required. It aims to set users up with the best practices before they set out to write their first lines of code.</p>
+<p>For the last three years, I have been teaching undergraduates and
+masters students to use R. Predominantly as part of a second year
+statistics module for Ecology, Evolution, and Conservation courses at a
+UK university. This statistics course naturally blends into other
+modules and will ultimately form the basis of any third year
+dissertation the students undertake. Much of this teaching is extremely
+fulfilling, guiding students through difficult problems, building their
+confidence, and, yes, pointing out a few unclosed brackets. But there
+often remains a lingering hatred for R among undergraduates, and come to
+think of it several PhD students I know. Students who have never quite
+gotten over being told they shouldn’t use excel any more. This
+introduction is for those students. It is my attempt to start the slate
+over again and introduce R fresh, and also start any new students
+looking at getting into R the best possible path forward.</p>
+<p>The main sections of this document cover what R is, why we use R, the
+basics of using R, and finally the best practise for learning R. There
+are examples of code within this introduction, but no coding is
+required. It aims to set users up with the best practices before they
+set out to write their first lines of code.</p>
 </div>
 <div id="what-is-r" class="section level2">
 <h2>What is R?</h2>
-<p>R is a tool for manipulating, analysing, and plotting data. It is mainly thought of as a programming language such as Java or C++. What this means is R is a way of writing down instructions to tell a computer to do a task. The same way you can use English to tell someone how to bake a cake, you can use R to tell a computer to conduct a statistical test or plot a histogram. R is also an “environment” which means it contains where the computer takes, reads, carries out, and stores the output of any instructions we give it. Everything R does is contained within itself.</p>
+<p>R is a tool for manipulating, analysing, and plotting data. It is
+mainly thought of as a programming language such as Java or C++. What
+this means is R is a way of writing down instructions to tell a computer
+to do a task. The same way you can use English to tell someone how to
+bake a cake, you can use R to tell a computer to conduct a statistical
+test or plot a histogram. R is also an “environment” which means it
+contains where the computer takes, reads, carries out, and stores the
+output of any instructions we give it. Everything R does is contained
+within itself.</p>
 </div>
 <div id="why-use-r" class="section level2">
 <h2>Why use R?</h2>
-<p>Why is this useful? Well firstly and most importantly it’s reliable. Now several undergraduates who have used R before might be screaming at the idea that I’ve just called R reliable. But what I mean by reliable is that if you tell R to do something, it will always <em>always</em> carry out that task in exactly the same way. Wrote some code in June 2012 for calculating the number of elephants in a safari park based on camera trap footage, R will run that code and tell you the exact same number of elephants each time, giving you the same answer today as it did 10 years ago. You can also take that same code, plug in a new data set of camera footage and R will calculate the number of elephants in the exact same way. This is incredibly important for the scientific process. Allowing others to understand and recreate your analysis benefits everyone. It also speeds up the process of analysing data that you’ve previously worked on.</p>
-<p>However, this rigidity comes at a cost. R will carry out and complete “incorrect” instructions as well. Normally, this will produce an error. For example if you try to add 5 the word “falafel”.</p>
+<p>Why is this useful? Well firstly and most importantly it’s reliable.
+Now several undergraduates who have used R before might be screaming at
+the idea that I’ve just called R reliable. But what I mean by reliable
+is that if you tell R to do something, it will always <em>always</em>
+carry out that task in exactly the same way. Wrote some code in June
+2012 for calculating the number of elephants in a safari park based on
+camera trap footage, R will run that code and tell you the exact same
+number of elephants each time, giving you the same answer today as it
+did 10 years ago. You can also take that same code, plug in a new data
+set of camera footage and R will calculate the number of elephants in
+the exact same way. This is incredibly important for the scientific
+process. Allowing others to understand and recreate your analysis
+benefits everyone. It also speeds up the process of analysing data that
+you’ve previously worked on.</p>
+<p>However, this rigidity comes at a cost. R will carry out and complete
+“incorrect” instructions as well. Normally, this will produce an error.
+For example if you try to add 5 the word “falafel”.</p>
 <pre class="r"><code>5 + &quot;falafel&quot;</code></pre>
 <pre><code>## Error in 5 + &quot;falafel&quot;: non-numeric argument to binary operator</code></pre>
-<p>But sometimes, mistakes are made that aren’t outright errors. R can still carry out the instructions you’ve given it but they aren’t the instructions you thought you’d written.</p>
-<p>For example, you have an experiment that has five lizards each in an box labelled “1” to “5”. You also have the lizards’ lengths, but the measurements are in inches not cm. As such you go to R and tell it to times all of the length data by 2.54.</p>
+<p>But sometimes, mistakes are made that aren’t outright errors. R can
+still carry out the instructions you’ve given it but they aren’t the
+instructions you thought you’d written.</p>
+<p>For example, you have an experiment that has five lizards each in an
+box labelled “1” to “5”. You also have the lizards’ lengths, but the
+measurements are in inches not cm. As such you go to R and tell it to
+times all of the length data by 2.54.</p>
 <pre class="r"><code>#Names of lizard
 lizard.name &lt;- c(1, 2, 3, 4, 5)
 #length of lizards
@@ -329,65 +351,182 @@ lizard.length &lt;- c(12, 15, 13, 15, 11)
 #Converting lizard length from inches to cm
 lizard.name * 2.54</code></pre>
 <pre><code>## [1]  2.54  5.08  7.62 10.16 12.70</code></pre>
-<p>A quick look at this output would tell us we’ve done something wrong (you’re pretty sure you didn’t have a lizard that was 2.54 cm long), but because R didn’t produce an outright error it can be easy to miss. We might not get an error or a “hey that looks weird” output until a few more lines of code have been run. This is where most/all frustrations from using R comes from - incorrect code. Can you spot what the above line of code did wrong?</p>
-<p>We multiplied the lizards number label by 2.54 instead of the length data.</p>
-<p>If R has outputted something which isn’t right, or throws out an error saying it can’t carry out a specific instruction, it is not because R has chosen the wrong set of default parameters or guessed what you’re trying to do and relabelled your data accordingly (which excel will do constantly). It is because the instructions, the code you wrote, do not instruct R to do the task you want it to do.</p>
-<p>This is the benefit of writing code to analyze your data, instead of using a programme based on clicking around the user interface. Once you’ve written a section of code to conduct a task you will never have to rewrite that section of code again. And because R is the most widely used coding language for statistics it has tonnes or support. You will be hard pressed to find an R error that someone hasn’t previously submitted to an internet forum.</p>
+<p>A quick look at this output would tell us we’ve done something wrong
+(you’re pretty sure you didn’t have a lizard that was 2.54 cm long), but
+because R didn’t produce an outright error it can be easy to miss. We
+might not get an error or a “hey that looks weird” output until a few
+more lines of code have been run. This is where most/all frustrations
+from using R comes from - incorrect code. Can you spot what the above
+line of code did wrong?</p>
+<p>We multiplied the lizards number label by 2.54 instead of the length
+data.</p>
+<p>If R has outputted something which isn’t right, or throws out an
+error saying it can’t carry out a specific instruction, it is not
+because R has chosen the wrong set of default parameters or guessed what
+you’re trying to do and relabelled your data accordingly (which excel
+will do constantly). It is because the instructions, the code you wrote,
+do not instruct R to do the task you want it to do.</p>
+<p>This is the benefit of writing code to analyze your data, instead of
+using a programme based on clicking around the user interface. Once
+you’ve written a section of code to conduct a task you will never have
+to rewrite that section of code again. And because R is the most widely
+used coding language for statistics it has tonnes or support. You will
+be hard pressed to find an R error that someone hasn’t previously
+submitted to an internet forum.</p>
 </div>
 <div id="the-basics" class="section level2">
 <h2>The Basics</h2>
 <div id="r-studio" class="section level3">
 <h3>R Studio</h3>
-<p>Nearly everyone who learns R nowadays uses <a href="https://www.rstudio.com/">R studio</a>. R studio is a programme designed to make using R easier. You can use R without it, but this consists of typing in code to a literal black box and is difficult to see and learn from mistakes. R studio, allows you to write and edit code as you would an essay in word, check the code is working, and see and compare outputs more easily.</p>
+<p>Nearly everyone who learns R nowadays uses <a
+href="https://www.rstudio.com/">R studio</a>. R studio is a programme
+designed to make using R easier. You can use R without it, but this
+consists of typing in code to a literal black box and is difficult to
+see and learn from mistakes. R studio, allows you to write and edit code
+as you would an essay in word, check the code is working, and see and
+compare outputs more easily.</p>
 <p>This is what it looks like.</p>
 <p><img src="Pictures/R%20studio.png" width="958" /></p>
-<p>It is split into four main windows; your script, the console, the environment, and a viewer.</p>
-<p>Working in R you will spend 99% of your time moving between these four windows. In fact if you are doing something in an R studio that isn’t in these four windows you’re probably doing something dodgy.</p>
-<p>The first window in the top left hand side of the screen contains your R script, this is a text file designated by having the file extension “.R” after it. Think of this as a word document, a place to write, edit, inspect, and save your code before you tell R to actually do anything. R scripts can be short or they can be many thousands of lines long. But importantly anything you write into the script is not immediately read and used by R.</p>
-<p>The second window sits below your script and is known as the console. This is where the actual work R does gets done. Code that is entered into the console is used by R. This can be done manually, but it is a lot easier and clearer to write your code as a script and then send that code to the console once you are happy and sure what you’ve written is correct. This is done by highlighting a section of your script and clicking the “run” button in the top right-hand side of the script window (or pressing the keyboard shortcut “ctrl + enter” or “command + enter” if you’re on a mac). The console is also where any answers to calculations or results from any statistical tests we’ve asked to be undertaken are printed out.</p>
-<p>Simple code often just runs a calculation and spits the answer straight back at you. For example.</p>
+<p>It is split into four main windows; your script, the console, the
+environment, and a viewer.</p>
+<p>Working in R you will spend 99% of your time moving between these
+four windows. In fact if you are doing something in an R studio that
+isn’t in these four windows you’re probably doing something dodgy.</p>
+<p>The first window in the top left hand side of the screen contains
+your R script, this is a text file designated by having the file
+extension “.R” after it. Think of this as a word document, a place to
+write, edit, inspect, and save your code before you tell R to actually
+do anything. R scripts can be short or they can be many thousands of
+lines long. But importantly anything you write into the script is not
+immediately read and used by R.</p>
+<p>The second window sits below your script and is known as the console.
+This is where the actual work R does gets done. Code that is entered
+into the console is used by R. This can be done manually, but it is a
+lot easier and clearer to write your code as a script and then send that
+code to the console once you are happy and sure what you’ve written is
+correct. This is done by highlighting a section of your script and
+clicking the “run” button in the top right-hand side of the script
+window (or pressing the keyboard shortcut “ctrl + enter” or “command +
+enter” if you’re on a mac). The console is also where any answers to
+calculations or results from any statistical tests we’ve asked to be
+undertaken are printed out.</p>
+<p>Simple code often just runs a calculation and spits the answer
+straight back at you. For example.</p>
 <pre class="r"><code>6 * 7</code></pre>
 <pre><code>## [1] 42</code></pre>
-<p>But soon we begin to need to save and store large or complex sets of information. Information that would be helpful if R stored under a simple easy to use name, rather than us having to type it out manually each time. Here is where the environment comes in. The environment window allows you to look and see what is stored within R at that current moment, these are called “objects”. It also give you a little bit of information about each object stored. New objects are saved in R using the “assign” symbols &lt;-. Meaning we can store information in R by writing the name of the object we’d like to make and then writing what that object should contain. For instances,</p>
+<p>But soon we begin to need to save and store large or complex sets of
+information. Information that would be helpful if R stored under a
+simple easy to use name, rather than us having to type it out manually
+each time. Here is where the environment comes in. The environment
+window allows you to look and see what is stored within R at that
+current moment, these are called “objects”. It also give you a little
+bit of information about each object stored. New objects are saved in R
+using the “assign” symbols &lt;-. Meaning we can store information in R
+by writing the name of the object we’d like to make and then writing
+what that object should contain. For instances,</p>
 <pre class="r"><code>bonfire.night &lt;- &quot;5th November&quot;</code></pre>
-<p>will make an object called “bonfire.night” and have that object contain the information “5th November”. In order to get R to recall the information we have stored within the environment we just need to type in the name of the desired object.</p>
+<p>will make an object called “bonfire.night” and have that object
+contain the information “5th November”. In order to get R to recall the
+information we have stored within the environment we just need to type
+in the name of the desired object.</p>
 <pre class="r"><code>bonfire.night </code></pre>
 <pre><code>## [1] &quot;5th November&quot;</code></pre>
-<p>The R environment can be saved from session to session, meaning you don’t have to read in all your lines of code and recreate all your objects over and over again. However, this can get messy and leads to vital code being lost or misplaced. In general you should have your R environment empty at the start of every session. You can do this by pressing the little symbol of a sweeping brush at the top of the environment window.</p>
-<p>Finally, the last window contains a viewing window for output that isn’t text. e.g. graphics. Any plots that R produces will be displayed here. Sometimes this window is used to browse help sheets or files, but its usual function is for looking at figures.</p>
-<p>Have this way of moving through R studio built into how you work in R. Write code in the script, send that code to the console, check the environment to see your objects have been created and stored, and view any figure.</p>
+<p>The R environment can be saved from session to session, meaning you
+don’t have to read in all your lines of code and recreate all your
+objects over and over again. However, this can get messy and leads to
+vital code being lost or misplaced. In general you should have your R
+environment empty at the start of every session. You can do this by
+pressing the little symbol of a sweeping brush at the top of the
+environment window.</p>
+<p>Finally, the last window contains a viewing window for output that
+isn’t text. e.g. graphics. Any plots that R produces will be displayed
+here. Sometimes this window is used to browse help sheets or files, but
+its usual function is for looking at figures.</p>
+<p>Have this way of moving through R studio built into how you work in
+R. Write code in the script, send that code to the console, check the
+environment to see your objects have been created and stored, and view
+any figure.</p>
 </div>
 <div id="types-of-data-in-r" class="section level3">
 <h3>Types of data in R</h3>
-<p>The most common errors produced by undergraduates in R, apart from unclosed brackets, is storing information correctly. Its useful to remember that computers are stupid and can’t understand context. Information stored and used by R has to be assigned a data type. Essentially you have to tell R what type of data it is dealing with. Feeding R a set of data that is labelled incorrectly will very quickly cause issues. There are five main data types: numeric, integer, factor, character, and logical. I know where getting technical here but bear with me.</p>
+<p>The most common errors produced by undergraduates in R, apart from
+unclosed brackets, is storing information correctly. Its useful to
+remember that computers are stupid and can’t understand context.
+Information stored and used by R has to be assigned a data type.
+Essentially you have to tell R what type of data it is dealing with.
+Feeding R a set of data that is labelled incorrectly will very quickly
+cause issues. There are five main data types: numeric, integer, factor,
+character, and logical. I know where getting technical here but bear
+with me.</p>
 <ul>
-<li><strong>Numeric</strong> - Numeric data is you basic number data. Think length of dragonfly, speed of cockroach, or time drinking at watering hole. It can be any values as long as its a number.</li>
-<li><strong>Integer</strong> - Integers are numbers but they have to be whole, no decimal places. Think number of cows in a field or successful fledglings from a nest.</li>
-<li><strong>Factor</strong> - Information should be provided as a factor if it can be stored in discrete packages. This could be experimental treatment, species of animal, or type of food eaten.</li>
-<li><strong>Character</strong> - Character data is used for information that is just text written about that specific data point. It could be the ID code for a tissue sample or the name of a person who filled out a survey. It is crucial to differentiate between character data and factor data when the information presented cannot be stored into discrete units. For example, you may have five people called “Oliver” fill out a survey, but you should not group all the Olivers together in the same way you would group everyone who said their occupation was “teacher”.</li>
-<li><strong>Logical</strong> - Logical data is simply binary “True” or “False” data.</li>
+<li><strong>Numeric</strong> - Numeric data is you basic number data.
+Think length of dragonfly, speed of cockroach, or time drinking at
+watering hole. It can be any values as long as its a number.</li>
+<li><strong>Integer</strong> - Integers are numbers but they have to be
+whole, no decimal places. Think number of cows in a field or successful
+fledglings from a nest.</li>
+<li><strong>Factor</strong> - Information should be provided as a factor
+if it can be stored in discrete packages. This could be experimental
+treatment, species of animal, or type of food eaten.</li>
+<li><strong>Character</strong> - Character data is used for information
+that is just text written about that specific data point. It could be
+the ID code for a tissue sample or the name of a person who filled out a
+survey. It is crucial to differentiate between character data and factor
+data when the information presented cannot be stored into discrete
+units. For example, you may have five people called “Oliver” fill out a
+survey, but you should not group all the Olivers together in the same
+way you would group everyone who said their occupation was
+“teacher”.</li>
+<li><strong>Logical</strong> - Logical data is simply binary “True” or
+“False” data.</li>
 </ul>
-<p>Notice how in the lizard example above, the error came about in part because we had the names of the lizards stored as a numeric rather than a character or factor. Getting to know these five different data types and making sure your data is assigned the right data type will go a long way to reducing errors in R.</p>
+<p>Notice how in the lizard example above, the error came about in part
+because we had the names of the lizards stored as a numeric rather than
+a character or factor. Getting to know these five different data types
+and making sure your data is assigned the right data type will go a long
+way to reducing errors in R.</p>
 </div>
 </div>
 <div id="learning-r-for-the-first-time" class="section level2">
 <h2>Learning R for the first time</h2>
-<p>Learning R is not quick. It isn’t always intuitive and is quite often thinking “I’ve seen that error before”. However, there are a few small changes that you can make that will greatly speed up the process. A lot of these fall under the banner of good coding practice, but quite often these are developed later after they’ve been using R for a while. But starting them now will set you up which the best possible chance of learning R quickly and painlessly.</p>
+<p>Learning R is not quick. It isn’t always intuitive and is quite often
+thinking “I’ve seen that error before”. However, there are a few small
+changes that you can make that will greatly speed up the process. A lot
+of these fall under the banner of good coding practice, but quite often
+these are developed later after they’ve been using R for a while. But
+starting them now will set you up which the best possible chance of
+learning R quickly and painlessly.</p>
 <div id="save-your-code" class="section level3">
 <h3>1) Save your code</h3>
-<p>Save and annotate everything your produce. Quite often I see undergraduates with a R script called <strong>untitled_4.R</strong> containing every piece of code they’ve ever written, jumbled together in a random order. Using R quite often uses the same lines of code over and over again. Take the time honoured classic.</p>
+<p>Save and annotate everything your produce. Quite often I see
+undergraduates with a R script called <strong>untitled_4.R</strong>
+containing every piece of code they’ve ever written, jumbled together in
+a random order. Using R quite often uses the same lines of code over and
+over again. Take the time honoured classic.</p>
 <pre class="r"><code>df &lt;- read.table(&quot;my_data_file.csv&quot;, header = T, sep = &quot;,&quot;)</code></pre>
-<p>Don’t worry you don’t need to understand that. What’s important is that you know that this line of code opens and reads a file called “my_data_file.csv” and stores it as an table in R call “df”. Given that nearly every piece of analysis conducted in R will start with reading in a data table from a file, this is an extremely important piece of code to have stored and ready to look up if you forget it. As you learn R, store everything you write in a safe and ordered manner. For example you may end up with a list of files like this</p>
+<p>Don’t worry you don’t need to understand that. What’s important is
+that you know that this line of code opens and reads a file called
+“my_data_file.csv” and stores it as an table in R call “df”. Given that
+nearly every piece of analysis conducted in R will start with reading in
+a data table from a file, this is an extremely important piece of code
+to have stored and ready to look up if you forget it. As you learn R,
+store everything you write in a safe and ordered manner. For example you
+may end up with a list of files like this</p>
 <ul>
 <li>Lesson 1 - Reading in data frames.R</li>
 <li>Lesson 2 - Converting between data types.R</li>
 <li>Lesson 3 - T tests.R</li>
 </ul>
-<p>Having your own resource bank of these help sheets will be a massive help a year down the line, when you trying to remember how to conduct an ANOVA for your 3rd year Evolution module.</p>
+<p>Having your own resource bank of these help sheets will be a massive
+help a year down the line, when you trying to remember how to conduct an
+ANOVA for your 3rd year Evolution module.</p>
 </div>
 <div id="write-linear-code" class="section level3">
 <h3>2) Write linear code</h3>
-<p>R works by being fed instructions one after another. This means the order in which those instructions are given matter. For example, you need to divide your measurements of ant antenna by 10 to convert them from mm to cm. So you write the following lines of code.</p>
+<p>R works by being fed instructions one after another. This means the
+order in which those instructions are given matter. For example, you
+need to divide your measurements of ant antenna by 10 to convert them
+from mm to cm. So you write the following lines of code.</p>
 <pre class="r"><code>#Creating an object called ant length
 ant.length &lt;- c(4 ,6 ,4 ,5 ,7)
 #Dividing ant lengths by 10 to convert from mm to cm
@@ -395,11 +534,15 @@ ant.length &lt;- ant.length / 10
 #Display final calculations
 ant.length</code></pre>
 <pre><code>## [1] 0.4 0.6 0.4 0.5 0.7</code></pre>
-<p>But afterwards you discover that your measuring callipers weren’t zeroed correctly and you need to minus 2 mm of all your antenna. So you add the additional line of code.</p>
+<p>But afterwards you discover that your measuring callipers weren’t
+zeroed correctly and you need to minus 2 mm of all your antenna. So you
+add the additional line of code.</p>
 <pre class="r"><code>ant.length &lt;- ant.length - 2
 ant.length</code></pre>
 <pre><code>## [1] -1.6 -1.4 -1.6 -1.5 -1.3</code></pre>
-<p>As you can see, this hasn’t given taken 2 mm away from the original data, its taken 2 cm off the ant.length object as it was stored within the environment. We need to write the code as follows.</p>
+<p>As you can see, this hasn’t given taken 2 mm away from the original
+data, its taken 2 cm off the ant.length object as it was stored within
+the environment. We need to write the code as follows.</p>
 <pre class="r"><code>#Creating an object called ant length
 ant.length &lt;- c(4 ,6 ,4 ,5 ,7)
 #Minus 2 mm due to calliper error
@@ -409,11 +552,19 @@ ant.length &lt;- ant.length / 10
 #Display final calculations
 ant.length</code></pre>
 <pre><code>## [1] 0.2 0.4 0.2 0.3 0.5</code></pre>
-<p>Much more complex and difficult to untangle scenarios can arise very rapidly while trying to fix code. You may not always write your finial piece of code in order start to finish, but you should make sure whenever you take a break or save your work that you have reordered you code so that it is capable of running from start to finish.</p>
+<p>Much more complex and difficult to untangle scenarios can arise very
+rapidly while trying to fix code. You may not always write your finial
+piece of code in order start to finish, but you should make sure
+whenever you take a break or save your work that you have reordered you
+code so that it is capable of running from start to finish.</p>
 </div>
 <div id="litter-your-code-with-notes" class="section level3">
 <h3>3) Litter your code with notes</h3>
-<p>When writing R scripts you can use the <code>#</code> symbol to denote lines of code that aren’t meant to read by the computer. This is helpful because as you can see above it lets you annotate your code. The very best code you can write will have a <code>#</code> between every line of code.</p>
+<p>When writing R scripts you can use the <code>#</code> symbol to
+denote lines of code that aren’t meant to read by the computer. This is
+helpful because as you can see above it lets you annotate your code. The
+very best code you can write will have a <code>#</code> between every
+line of code.</p>
 <pre class="r"><code>#Fizz buzz
 #Game if number is divisible my 3 say Fizz, if divisible by 5 say Buzz, if divisible by both 3 and 5 say Fizz buzz
 
@@ -453,20 +604,49 @@ for(i in 1:15){
 ## [1] 13
 ## [1] 14
 ## [1] &quot;Fizz Buzz&quot;</code></pre>
-<p>Now that may look horrible and complicated and involve lots of symbols that we haven’t yet (and won’t) touch on. But hopefully, you will be able to discern what each line of code is actually doing. This is incredibly important when learning R, you’ll be surprised how complicated and opaque even simple lines of code can look even the day after you wrote them.</p>
+<p>Now that may look horrible and complicated and involve lots of
+symbols that we haven’t yet (and won’t) touch on. But hopefully, you
+will be able to discern what each line of code is actually doing. This
+is incredibly important when learning R, you’ll be surprised how
+complicated and opaque even simple lines of code can look even the day
+after you wrote them.</p>
 </div>
-<div id="rarely-copy-and-paste-code-from-worksheets" class="section level3">
+<div id="rarely-copy-and-paste-code-from-worksheets"
+class="section level3">
 <h3>4) Rarely copy and paste code from worksheets</h3>
-<p>If this document went further and started to go through coding tasks, I would make a point of making it so each example of code could not be copied and pasted. It would be stored as a picture. Why? Because coding is tricky and tiny small errors can cause issues. Learning to use R involves being able to pick up on these errors and correct them. And that’s not something you can do by copy and pasting example code. If you are presented with a new section of code, manually type that code out yourself. Learn and notice what each bracket and comma does. You will have to write your own code at some point and learning to pick up spelling mistakes or syntax errors is a big part of that. Typing out all your own code, right from the start, speed that process up.</p>
-<p>Starting out learning R with these rules will give you the best shot at building up your knowledge quickly and easily.</p>
+<p>If this document went further and started to go through coding tasks,
+I would make a point of making it so each example of code could not be
+copied and pasted. It would be stored as a picture. Why? Because coding
+is tricky and tiny small errors can cause issues. Learning to use R
+involves being able to pick up on these errors and correct them. And
+that’s not something you can do by copy and pasting example code. If you
+are presented with a new section of code, manually type that code out
+yourself. Learn and notice what each bracket and comma does. You will
+have to write your own code at some point and learning to pick up
+spelling mistakes or syntax errors is a big part of that. Typing out all
+your own code, right from the start, speed that process up.</p>
+<p>Starting out learning R with these rules will give you the best shot
+at building up your knowledge quickly and easily.</p>
 </div>
 </div>
 <div id="end" class="section level2">
 <h2>End</h2>
-<p>I hope this introduction to R has given you a rough understanding of what using R is like, how best to approach using R, and some tips for getting the most out of learning R. If you’d like to explore more I can recommend <a href="https://bookdown.org/ndphillips/YaRrr/">YaRrr- a pirates guide to R</a>.</p>
-<p>Bushra Abu-helil, also shared the <a href="https://online-learning.harvard.edu/subject/r">Harvard R course</a> and the <a href="https://www.edx.org/learn/r-programming">edx course.</a></p>
-<p>Also for women there is <a href="https://rladies.org/">R-ladies</a> a community of female coders aiming to make the world of R more inclusive</p>
-<p>Feedback from students and teachers is most welcome, you can find my contact details on the <a href="http://www.conservationecology.org/christophe-patterson.html">Durham Conservation Ecology Groups’ webpage.</a>.</p>
+<p>I hope this introduction to R has given you a rough understanding of
+what using R is like, how best to approach using R, and some tips for
+getting the most out of learning R. If you’d like to explore more I can
+recommend <a href="https://bookdown.org/ndphillips/YaRrr/">YaRrr- a
+pirates guide to R</a>.</p>
+<p>Bushra Abu-helil, also shared the <a
+href="https://online-learning.harvard.edu/subject/r">Harvard R
+course</a> and the <a href="https://www.edx.org/learn/r-programming">edx
+course.</a></p>
+<p>Also for women there is <a href="https://rladies.org/">R-ladies</a> a
+community of female coders aiming to make the world of R more
+inclusive</p>
+<p>Feedback from students and teachers is most welcome, you can find my
+contact details on the <a
+href="http://www.conservationecology.org/christophe-patterson.html">Durham
+Conservation Ecology Groups’ webpage.</a>.</p>
 </div>
 
 
@@ -478,7 +658,7 @@ for(i in 1:15){
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -496,7 +676,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
