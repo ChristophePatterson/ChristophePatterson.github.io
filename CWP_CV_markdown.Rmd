@@ -1,7 +1,7 @@
 ---
 title: "Christophe Patterson CV"
 author: ""
-date: "16/01/2022"
+date: "29/06/2023"
 output: html_document
 ---
 
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Personal Profile
 
-A PhD student with a passion for exploration and education. Has a keen interest in studying the impacts of humans&#39; actions, including climate change, on biodiversity and species&#39; geographic ranges. Interested in furthering their experience in next generation sequencing, fieldwork, scientific literacy, and communication. Has developed the key skills needed for teamwork and effective organisation across a diverse range of jobs and voluntary work.
+A PhD student with a passion for exploration and education. Has a keen interest in studying the impacts of humans actions, including climate change, on biodiversity and species geographic ranges. Interested in furthering their experience in next generation sequencing, fieldwork, scientific literacy, and communication. Has developed the key skills needed for teamwork and effective organisation across a diverse range of jobs and voluntary work.
 
 ---
 

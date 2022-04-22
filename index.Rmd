@@ -1,7 +1,8 @@
 ---
 title: "Home"
-output: 
-  html_document: 
+output:
+  pdf_document: default
+  html_document:
     theme: default
 ---
 ```{r setup, include=FALSE}
@@ -28,6 +29,8 @@ I grew up just outside of Leeds on the boundary of the Yorkshire dales.
 You can reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html) or Twitter ([@Christophe_Patt ](https://twitter.com/Christophe_Patt)) 
 
 ## Papers
+
+**Patterson C** and Drury J. [Interspecific behavioural interference and range dynamics: current insights and future directions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12993) *Biological Reviews* 2023
 
 **Patterson C**, Laing C, Early R. The range expansion of [*Clibanarius erythropus* to the UK suggests that other range-shifting intertidal species may not follow](http://dx.doi.org/10.1007/s00227-021-04008-5) *Marine Biology* 2022
 

@@ -7,5 +7,5 @@ rmarkdown::render_site()
 #Entered in the TERMINAL
 git status
 git add .
-git commit -m "NAME OF COMMIT"
-git push -u origin <BRANCH-NAME>
+git commit -m "Biological Reviews add"
+git push -u origin main
