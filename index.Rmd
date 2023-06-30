@@ -18,15 +18,17 @@ include_graphics(img1_path)
 
 A PhD student with a passion for research, exploration and education. Has a keen interest in studying the impacts of humans’ actions, including climate change, on biodiversity and species’ geographic ranges. Interested in furthering their experience in next generation sequencing, fieldwork, scientific literacy, and communication. Has developed the key skills needed for teamwork and effective organisation across a diverse range of jobs and voluntary work
 
+#### PhD
+
 Does interspecific behavioural interference limit the ability of species to range shifts? Research focuses of [Rubyspot damselflies](https://www.inaturalist.org/projects/smoky-rubyspots), *Hetaerina*, where species engage and experience varying levels of aggressive and reproductive interference. Do the ranges of *Hetaerina* species that experience lower levels of interspecific interference expand more rapidly?
+
+#### Rock Pool Project, Director of Science
 
 Director of Science for the [rock pool project](https://www.therockpoolproject.co.uk/) a not-for-profit community outreach project aiming to educate, engage and conserve rock pool wildlife in the UK. 
 
+#### Previous research
+
 Attended the University of Exeter (Penryn) for both a BSc in Evolutionary Biology and a two-year Master by Research. Investigated the range expansion of the [St Piran’s hermit crab](https://www.therockpoolproject.co.uk/st-pirans-hermit-crab/), *Clibanarius erythropus*, to the southwest UK using, [population size and morphology surveys](https://mbr.biomedcentral.com/articles/10.1186/s41200-020-00186-1), population genetics and [larval dispersal models](http://dx.doi.org/10.1007/s00227-021-04008-5). 
-
-I grew up just outside of Leeds on the boundary of the Yorkshire dales.
-
-You can reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html) or Twitter ([@Christophe_Patt ](https://twitter.com/Christophe_Patt)) 
 
 ## Papers
 
@@ -49,6 +51,10 @@ Sanders D, Frago E, Kehoe R, **Patterson C**, and Gaston KJ. . [A meta-analysis 
 [Cornwall's rockpool species 'threatened by climate change'](https://www.bbc.co.uk/news/uk-england-cornwall-60055099) **BBC Spotlight** 20/01/22
 
 [The week in wildlife](https://www.theguardian.com/environment/gallery/2022/jan/21/the-week-in-wildlife-in-pictures#img-21) **The Guardian** 21/01/22
+
+# Contact
+
+You can reach out by [email anytime](http://www.conservationecology.org/christophe-patterson.html) or Twitter ([@Christophe_Patt ](https://twitter.com/Christophe_Patt)) 
 
 ```{r Footer, out.width="100%", fig.align='left', echo=FALSE}
 img1_path <- "Pictures/Footer.jpg"

@@ -1,5 +1,11 @@
 ---
-title: "Introduction to R"
+title: Introduction to R
+author: 'Christophe Patterson'
+date: "29/06/2023"
+output:
+  pdf_document: default
+  html_document:
+    theme: default
 ---
 
 ```{r setup, include=FALSE}
